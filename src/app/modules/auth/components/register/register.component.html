@@ -1,0 +1,35 @@
+<mat-card class="register-container">
+  <h3>Registration</h3>
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Email" formControlName = "email">
+      <mat-error *ngIf="form.hasError('required','email')">
+        email is required!
+      </mat-error>
+      <mat-error *ngIf="form.hasError('email','email')">
+        email is not valid!
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Password</mat-label>
+      <input matInput placeholder="Password" formControlName = "password" type="password">
+      <mat-error *ngIf="form.hasError('required','password')">
+        password is required!
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Confirm Password</mat-label>
+      <input matInput placeholder="Confirm Password" formControlName = "confirm_password" type="password">
+      <mat-error *ngIf="form.hasError('notSame')">
+        passwords are not same!
+      </mat-error>
+
+
+    </mat-form-field>
+    <div class="register-actions">
+      <a routerLink="/auth">Log In</a>
+      <button mat-raised-button type="submit" color =primary>Register</button>
+    </div>
+  </form>
+</mat-card>

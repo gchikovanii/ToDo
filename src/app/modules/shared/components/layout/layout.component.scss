@@ -1,0 +1,19 @@
+.spacer{
+  flex: 1 1 auto;
+}
+.sidenav{
+  width: 200px;
+
+}
+.content{
+  padding: 10px;
+}
+
+mat-list-item{
+  cursor: pointer;
+  &.active{
+    color: white;
+    background-color: #abc4ff;
+  }
+
+}

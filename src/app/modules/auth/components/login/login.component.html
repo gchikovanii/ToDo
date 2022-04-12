@@ -1,0 +1,18 @@
+<mat-card class="auth-container">
+  <h3>Log In</h3>
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Email" formControlName = "email">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Password</mat-label>
+      <input matInput placeholder="Password" formControlName = "password" type="password">
+    </mat-form-field>
+    <div class="login-actions">
+      <a routerLink="/auth/register">Registration</a>
+      <button mat-raised-button type="submit" color =primary>Log In</button>
+    </div>
+  </form>
+</mat-card>
+
