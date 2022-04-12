@@ -26,7 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## Detailed Info:
+## Detailed Info
  
  This is a simple to do application written on angular, used Firebase for back. You need to register and then login.
  After successfully logging in to the web app, you will be able to add users, enter their information,
